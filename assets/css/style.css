@@ -362,10 +362,13 @@ header .navbar ul li a:hover {
 /* about section starts */
 .about {
   background: rgb(255, 255, 255);
+  text-align: center;
 }
 .about .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
   padding: 4rem;
@@ -375,7 +378,7 @@ header .navbar ul li a:hover {
   flex: 1 1 35rem;
 }
 .about .row .image img {
-  margin: 4rem;
+  margin: 2rem auto;
   width: 30rem;
   height: auto;
   border-radius: 5%;
@@ -383,6 +386,7 @@ header .navbar ul li a:hover {
   mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
+  display: block;
 }
 .about .row .image img:hover {
   mix-blend-mode: normal;
@@ -390,6 +394,7 @@ header .navbar ul li a:hover {
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
+  text-align: center;
 }
 .about .row .content h3 {
   color: rgb(27, 27, 27);
@@ -409,13 +414,20 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 
-
+/* box-container fixed: two boxes side by side */
 .about .row .content .box-container {
   display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   font-family: "Nunito";
   font-weight: 600;
+  text-align: left; /* keep inner text aligned properly */
+}
+.about .row .content .box-container .box {
+  flex: 1 1 300px; /* keep boxes side by side on large screens */
+  max-width: 400px;
 }
 .about .row .content .box-container .box p {
   text-transform: none;
@@ -425,6 +437,7 @@ header .navbar ul li a:hover {
 }
 .resumebtn {
   margin-top: 6rem;
+  text-align: center;
 }
 .resumebtn .btn {
   padding: 1.7rem 3rem;
@@ -434,6 +447,9 @@ header .navbar ul li a:hover {
   background: #2506ad;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   font-family: "Nunito", sans-serif;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
 }
 .resumebtn .btn span {
   font-weight: 600;
@@ -451,6 +467,7 @@ header .navbar ul li a:hover {
 .resumebtn .btn:hover i {
   transform: translateX(5px);
 }
+
 /* about media queries starts*/
 @media screen and (max-width: 600px) {
   .about .row .image {
@@ -469,9 +486,11 @@ header .navbar ul li a:hover {
     padding: 1rem;
   }
   .about .row .content .box-container {
-    gap: 0;
+    flex-direction: column; /* boxes stack on mobile */
+    gap: 1rem;
   }
 }
+
 /* about media queries ends*/
 /* about section ends */
 
