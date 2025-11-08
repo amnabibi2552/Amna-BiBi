@@ -221,7 +221,54 @@
 <!-- skills section ends -->
 
 		
+	
+				<!-- Achievements section starts -->
+<section class="skills" id="Achievements">
+  <h2 class="heading"><i class="fas fa-trophy"></i> Achievements & <span>CERTIFICATE</span></h2>
 
+  <div class="achievement-wrapper">
+    <div class="grid">
+
+     
+		
+		<div class="card" onclick="openPreview(this)">
+        <img src="./assets/images/coming soon.jpg" alt="Certificate 2">
+        <div class="card-title">Certificate: Video Editing Course (Digital Skill Center)</div>
+      </div>
+		
+		<div class="card" onclick="openPreview(this)">
+        <img src="./assets/images/coming soon.jpg" alt="Certificate 3">
+        <div class="card-title">Certificate: Canva Certified Course (Digital Skill Center)</div>
+      </div>
+		
+		<div class="card" onclick="openPreview(this)">
+        <img src="./assets/images/coming soon.jpg" alt="Certificate 4">
+        <div class="card-title">CCertificate: 2D 3D Animation Course (Digital Skill Center)</div>
+      </div>
+		
+		
+
+    <!-- Single Preview Overlay -->
+    <div class="preview-overlay" id="preview">
+      <span class="close-btn" onclick="closePreview()">×</span>
+      <img src="" alt="Preview">
+    </div>
+  </div>
+	
+	<script>
+  function openPreview(card) {
+    const imgSrc = card.querySelector("img").src;
+    const preview = document.getElementById("preview");
+    preview.querySelector("img").src = imgSrc;
+    preview.style.display = "flex";
+  }
+
+  function closePreview() {
+    document.getElementById("preview").style.display = "none";
+  }
+</script>
+	
+</section>
 			
 			
 <!-- experience section starts -->
