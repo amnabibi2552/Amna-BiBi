@@ -469,29 +469,29 @@ header .navbar ul li a:hover {
 }
 
 /* about media queries starts*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .about .row .image {
     margin-top: 2rem;
   }
   .about .row .image img {
     margin: 0 auto;
-	  text-align: center;
+
     width: 100%;
     mix-blend-mode: normal;
   }
   .about .row {
     padding: 0.5rem;
-	  text-align: center;
+
     margin-bottom: 7rem;
   }
   .about .row .content {
     padding: 1rem;
-	  text-align: center;
+
   }
   .about .row .content .box-container {
     flex-direction: column; /* boxes stack on mobile */
     gap: 1rem;
-	  text-align: center;
+
   }
 }
 
