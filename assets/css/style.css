@@ -486,10 +486,12 @@ header .navbar ul li a:hover {
   }
   .about .row .content {
     padding: 1rem;
+	  text-align: center;
   }
   .about .row .content .box-container {
     flex-direction: column; /* boxes stack on mobile */
     gap: 1rem;
+	  text-align: center;
   }
 }
 
