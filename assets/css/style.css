@@ -469,13 +469,13 @@ header .navbar ul li a:hover {
 }
 
 /* about media queries starts*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .about .row .image {
     margin-top: 2rem;
   }
   .about .row .image img {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     mix-blend-mode: normal;
   }
   .about .row {
