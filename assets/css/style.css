@@ -426,11 +426,10 @@ header .navbar ul li a:hover {
   text-align: left; /* keep inner text aligned properly */
 }
 .about .row .content .box-container .box {
-  max-width: 0px;
-  min-width: 400px;
-  justify-content: center;
-  /* padding-left: 60px; */
-  padding-right: 40px;
+    max-width: 400px;
+    justify-content: center;
+    padding-left: 45px;
+    /* padding-right: 40px; */
 }
 .about .row .content .box-container .box p {
   text-transform: none;
