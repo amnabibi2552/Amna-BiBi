@@ -1255,6 +1255,7 @@ header .hamburger.active .line-2 {
   position: relative;
   background-color: inherit;
   width: 50%;
+  z-index: 2;
 }
 
 /*circles on timeline*/
@@ -1271,6 +1272,7 @@ header .hamburger.active .line-2 {
   z-index: 10;
   box-shadow: 0 0 0 4px rgba(37, 6, 173, 0.15);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
 }
 
 .experience .container:hover::after {
@@ -1290,6 +1292,7 @@ header .hamburger.active .line-2 {
 
 .experience .right::after {
   left: -10px;
+  right: auto;
 }
 
 .experience .exp-card-shell {
@@ -2114,6 +2117,15 @@ form .button-area {
   font-size: 1.1rem;
   font-weight: 800;
   flex-shrink: 0;
+}
+
+.skills-abilities .skill-pill svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
