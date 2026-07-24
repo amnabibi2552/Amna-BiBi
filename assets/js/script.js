@@ -1,13 +1,19 @@
 $(document).ready(function () {
 
     $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
+        $(this).toggleClass('active');
+        $('header').toggleClass('menu-open');
     });
 
     $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
+        $('#menu').removeClass('active');
+        $('header').removeClass('menu-open');
+
+        if (window.scrollY > 50) {
+            $('header').addClass('header-scrolled');
+        } else {
+            $('header').removeClass('header-scrolled');
+        }
 
         if (window.scrollY > 60) {
             document.querySelector('#scroll-top').classList.add('active');
@@ -33,8 +39,8 @@ $(document).ready(function () {
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+            scrollTop: $($(this).attr('href')).offset().top - 80,
+        }, 800, 'swing')
     });
 
     // <!-- emailjs to mail contact form data -->
@@ -54,24 +60,63 @@ $(document).ready(function () {
     });
     // <!-- emailjs to mail contact form data -->
 
+    // Online Work Section Range Slider Logic
+    const slider = document.getElementById('volume-slider');
+    const sliderVal = document.getElementById('slider-value');
+    const rateBadge = document.getElementById('rate-badge');
+
+    if (slider && sliderVal && rateBadge) {
+        slider.addEventListener('input', function () {
+            const count = this.value;
+            sliderVal.textContent = count + ' Accounts';
+
+            if (count < 100) {
+                rateBadge.textContent = 'Competitive Rate';
+                rateBadge.style.color = '#ff8f04';
+            } else if (count < 500) {
+                rateBadge.textContent = 'Premium Rate';
+                rateBadge.style.color = '#2506ad';
+            } else if (count < 800) {
+                rateBadge.textContent = 'Bulk VIP Rate';
+                rateBadge.style.color = '#10b981';
+            } else {
+                rateBadge.textContent = 'Maximum VIP Rate';
+                rateBadge.style.color = '#ea4335';
+            }
+        });
+    }
+
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
-        }
-    });
+function setRoundedFavicon(imagePath) {
+    const canvas = document.createElement('canvas');
+    const size = 64; // Standard favicon size
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = function() {
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(img, 0, 0, size, size);
+        $("#favicon").attr("href", canvas.toDataURL("image/png"));
+    };
+    img.src = imagePath;
+}
+// Initial call
+setRoundedFavicon("assets/images/amna.png");
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Graphic Designer"],
+    strings: [
+        "Graphic Designer",
+        "Video Editor",
+        "Digital Tech Expert"
+    ],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -243,8 +288,9 @@ srtop.reveal('.education .box', { interval: 200 });
 srtop.reveal('.work .box', { interval: 200 });
 
 /* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline', { delay: 400 });
-srtop.reveal('.experience .timeline .container', { interval: 400 });
+const isMobile = window.innerWidth <= 600;
+srtop.reveal('.experience .timeline', { delay: 400, reset: !isMobile });
+srtop.reveal('.experience .timeline .container', { interval: 400, reset: !isMobile });
 
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
