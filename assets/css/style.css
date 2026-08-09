@@ -2109,11 +2109,6 @@ form .button-area {
   padding: 6rem 9%;
 }
 
-.skills-abilities {
-  background: radial-gradient(circle at 50% 50%, rgba(37, 6, 173, 0.015) 0%, transparent 60%), #ffffff;
-  padding: 5rem 2rem;
-}
-
 .skills-abilities .heading {
   margin-bottom: 4rem;
 }
