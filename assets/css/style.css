@@ -549,12 +549,12 @@ header .hamburger.active .line-2 {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: #ff8800;
+  background: #1a1a3e;
   color: #ffffff;
   font-size: 1.8rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 136, 0, 0.25);
+  box-shadow: 0 4px 15px rgba(26, 26, 62, 0.25);
 }
 
 .hero-social-icons a:hover {
