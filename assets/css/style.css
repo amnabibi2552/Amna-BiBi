@@ -357,9 +357,11 @@ header .hamburger.active .line-2 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 4rem;
   min-height: 100vh;
   align-items: center;
+  padding: 8rem 6rem 4rem;
+  background: linear-gradient(135deg, #f8f9ff 0%, #fff5eb 50%, #f8f9ff 100%);
 }
 
 .home #particles-js {
@@ -377,84 +379,94 @@ header .hamburger.active .line-2 {
   left: 0;
   height: 100%;
   width: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(255, 136, 0, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(26, 26, 62, 0.05) 0%, transparent 50%);
 }
 
 .home .content {
-  flex: 1 1 40rem;
-  padding-top: 1rem;
+  flex: 1 1 45rem;
   z-index: 1;
 }
 
 .home .image {
-  flex: 1 1 40rem;
+  flex: 1 1 35rem;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home .image img {
-  width: 70%;
-  margin-left: 6rem;
-  border-radius: 0%;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
-  cursor: pointer;
+  width: 85%;
+  max-width: 45rem;
+  border-radius: 2rem;
+  box-shadow: 0 20px 60px rgba(26, 26, 62, 0.15);
+  transition: all 0.4s ease;
 }
 
 .home .image img:hover {
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(255, 136, 0, 0.2);
 }
 
 .home .content h2 {
-  font-size: 7rem;
+  font-size: 5.5rem;
   font-weight: 800;
-  color: #002057;
+  color: #1a1a3e;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
 }
 
 .home .content h2 span {
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 800;
   color: #ff8800;
+  display: inline;
 }
 
 .home .content p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #1a1a3e;
   font-weight: 600;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  line-height: 1.4;
 }
 
 .home .content p span {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #ff8800;
-  font-weight: 600;
-  padding: 1rem 0;
+  font-weight: 700;
 }
 
 .home .btn {
-  margin-top: 1rem;
-
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 4em;
-  transition: 0.5s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  padding: 1.6rem 3.5rem;
+  border-radius: 50rem;
+  background: linear-gradient(135deg, #ff8800, #ffaa33);
   color: #fff;
-  background: #ff8800;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
   font-family: "Nunito", sans-serif;
-}
-
-.home .btn span {
   font-weight: 700;
   font-size: 1.7rem;
-  letter-spacing: 0.1rem;
-}
-
-.home .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(255, 136, 0, 0.3);
+  border: none;
+  cursor: pointer;
 }
 
 .home .btn:hover {
-  background: #1a047e;
+  background: linear-gradient(135deg, #1a1a3e, #2d2d5e);
+  box-shadow: 0 8px 25px rgba(26, 26, 62, 0.3);
+  transform: translateY(-3px);
+}
+
+.home .btn i {
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
 }
 
 .home .btn:hover i {
@@ -464,70 +476,41 @@ header .hamburger.active .line-2 {
 /* social icons start */
 .socials {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 3rem;
 }
 
 .socials .social-icons {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  display: flex;
+  gap: 1.2rem;
 }
 
 .socials .social-icons li {
   display: inline-block;
-  margin-bottom: 14px;
 }
 
 .social-icons a {
-  font-size: 2rem;
-  display: inline-block;
-  line-height: 44px;
-  color: #ff8800;
-  background-color: #09011b;
-  width: 44px;
-  height: 44px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff8800, #ffaa33);
+  width: 5rem;
+  height: 5rem;
   text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
 }
 
-/* Active state — yellow background */
-.social-icons a:active,
-.social-icons a:focus {
-  background-color: yellow;
-  color: #1a1a3e;
-}
-
-/* Hover colors */
 .social-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 136, 0, 0.4);
   color: #fff;
-}
-
-.social-icons a.github:hover {
-  background-color: #0e0e0e;
-}
-
-.social-icons a.twitter:hover {
-  background-color: #00aced;
-}
-
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-
-.social-icons a.dev:hover {
-  background-color: #070707;
-}
-
-.social-icons a.instagram:hover {
-  background-color: #ff8800;
-}
-
-.social-icons a.telegram:hover {
-  background-color: #0088cc;
 }
 
 .social-icons a.youtube:hover {
@@ -542,7 +525,7 @@ header .hamburger.active .line-2 {
 
 /* hero social icons start */
 .hero-socials {
-  margin: 2.5rem 0 1.5rem;
+  margin: 3rem 0 1.5rem;
 }
 
 .hero-social-icons {
@@ -560,31 +543,26 @@ header .hamburger.active .line-2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 5.2rem;
+  height: 5.2rem;
   border-radius: 50%;
-  background-color: #1a1a3e;
-  color: #ff8800;
-  font-size: 1.3rem;
+  background: linear-gradient(135deg, #ff8800, #ffaa33);
+  color: #ffffff;
+  font-size: 1.8rem;
   text-decoration: none;
-  border: 2px solid #333;
   transition: all 0.3s ease;
-  position: relative;
+  box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
 }
 
 .hero-social-icons a:hover {
-  transform: translateY(-4px) scale(1.1);
-  color: #ff8800;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(255, 136, 0, 0.4);
+  color: #fff;
 }
 
 .hero-social-icons a.facebook:hover {
   background: linear-gradient(135deg, #4D96FF, #4D96FF);
   box-shadow: 0 6px 20px rgba(77, 150, 255, 0.45);
-}
-
-.hero-social-icons a.instagram:hover {
-  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.45);
 }
 
 .hero-social-icons a.tiktok:hover {
@@ -605,17 +583,7 @@ header .hamburger.active .line-2 {
 
 .hero-social-icons a.email:hover {
   background: linear-gradient(135deg, #ff8800, #ff8800);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.45);
-}
-
-.hero-social-icons a.fiverr:hover {
-  background: linear-gradient(135deg, #6BCB77, #6BCB77);
-  box-shadow: 0 6px 20px rgba(107, 203, 119, 0.45);
-  color: #fff;
-}
-
-.hero-social-icons a:active {
-  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(255, 136, 0, 0.45);
 }
 
 /* hero social icons end */
@@ -635,9 +603,9 @@ header .hamburger.active .line-2 {
   }
 
   .hero-social-icons a {
-    width: 36px;
-    height: 36px;
-    font-size: 0.95rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.4rem;
   }
 
   .home .image img {
@@ -645,11 +613,11 @@ header .hamburger.active .line-2 {
   }
 
   .home .content p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .home .content p span {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
