@@ -360,6 +360,7 @@ header .hamburger.active .line-2 {
   gap: 4rem;
   min-height: 100vh;
   align-items: center;
+  justify-content: center;
   padding: 8rem 6rem 4rem;
   background: #ffffff;
   overflow: hidden;
@@ -386,6 +387,7 @@ header .hamburger.active .line-2 {
   flex: 1 1 45rem;
   z-index: 1;
   position: relative;
+  text-align: center;
 }
 
 .home .image {
@@ -528,11 +530,12 @@ header .hamburger.active .line-2 {
 
 /* hero social icons start */
 .hero-socials {
-  margin: 3rem 0 1.5rem;
+  margin: 2.5rem 0 1.5rem;
 }
 
 .hero-social-icons {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
   gap: 1.2rem;
