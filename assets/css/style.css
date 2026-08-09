@@ -1824,7 +1824,7 @@ form .button-area {
 .footer .box-container .box {
   margin: 0;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 2px solid #ff8800;
   border-radius: 1.2rem;
   padding: 2.5rem;
   transition: all 0.3s ease;
@@ -1832,7 +1832,7 @@ form .button-area {
 
 .footer .box-container .box:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 136, 0, 0.3);
+  border-color: #ff8800;
   transform: translateY(-4px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
