@@ -650,7 +650,7 @@ header .hamburger.active .line-2 {
 }
 
 .about {
-  background: #fff8f0;
+  background: #f7f8fc;
   padding: 5rem 2rem 2rem 2rem;
 }
 
@@ -969,7 +969,7 @@ header .hamburger.active .line-2 {
 
 /* education section starts */
 .education {
-  background: #f0f4ff;
+  background: #ffffff;
   padding: 5rem 2rem 2rem 2rem;
 }
 
@@ -1295,7 +1295,7 @@ header .hamburger.active .line-2 {
 
 /* experience section starts */
 .experience {
-  background: #f8fafc;
+  background: #ffffff;
   padding: 5rem 2rem;
 }
 
@@ -2105,7 +2105,7 @@ form .button-area {
 
 /* Skills & Abilities Section Styles */
 .skills-abilities {
-  background: #fff5eb;
+  background: #f7f8fc;
   padding: 6rem 9%;
 }
 
