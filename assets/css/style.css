@@ -762,7 +762,7 @@ header .hamburger.active .line-2 {
 }
 
 .about .content p.description {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.8;
   color: #475569;
   font-weight: 500;
@@ -859,7 +859,7 @@ header .hamburger.active .line-2 {
 }
 
 .about .expertise-card-core p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #64748b;
   line-height: 1.5;
   margin: 0;
@@ -1076,7 +1076,7 @@ header .hamburger.active .line-2 {
 
 .education .edu-year {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #0e2431;
 }
@@ -1115,7 +1115,7 @@ header .hamburger.active .line-2 {
 }
 
 .education .edu-body p.inst {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   color: #64748b;
   font-weight: 600;
   line-height: 1.4;
@@ -1147,7 +1147,7 @@ header .hamburger.active .line-2 {
 }
 
 .education .stat-value {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #334155;
   text-transform: none;
@@ -1469,7 +1469,7 @@ header .hamburger.active .line-2 {
 
 .experience .exp-desc {
   font-family: "Nunito", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   line-height: 1.6;
   color: #1a1a3e;
   font-weight: 600;
@@ -1859,7 +1859,7 @@ form .button-area {
 }
 
 .footer .box-container .box p {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   line-height: 1.8;
   color: #ffffff;
   padding: 1rem 0;
@@ -1873,7 +1873,7 @@ form .button-area {
 
 .footer .box-container .box p.socials-tagline {
   padding: 0.3rem 0 1.6rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.02rem;
 }
@@ -2010,7 +2010,7 @@ form .button-area {
   position: relative;
   padding: 1rem 0 0 0;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   color: #fff;
@@ -2091,7 +2091,7 @@ form .button-area {
 
   .footer .box-container .box p {
     padding: 0.6rem 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.75;
   }
 
@@ -2204,7 +2204,7 @@ form .button-area {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 600;
   font-family: "Plus Jakarta Sans", sans-serif;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -2345,7 +2345,7 @@ form .button-area {
 }
 
 .online-work .work-tagline {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 1rem;
