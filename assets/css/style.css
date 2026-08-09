@@ -356,13 +356,14 @@ header .hamburger.active .line-2 {
 .home {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
+  flex-direction: column;
   min-height: 100vh;
+  justify-content: center;
   align-items: center;
   padding: 8rem 6rem 4rem;
   background: #ffffff;
   overflow: hidden;
+  text-align: center;
 }
 
 .home #particles-js {
@@ -445,25 +446,25 @@ header .hamburger.active .line-2 {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   padding: 1.6rem 3.5rem;
   border-radius: 50rem;
-  background: #ff8800;
-  color: #fff;
+  background: #1a1a3e;
+  color: #ffffff;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(255, 136, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(26, 26, 62, 0.3);
   border: none;
   cursor: pointer;
 }
 
 .home .btn:hover {
-  background: #1a1a3e;
-  box-shadow: 0 8px 25px rgba(26, 26, 62, 0.3);
+  background: #ff8800;
+  box-shadow: 0 8px 25px rgba(255, 136, 0, 0.3);
   transform: translateY(-3px);
 }
 
@@ -528,11 +529,12 @@ header .hamburger.active .line-2 {
 
 /* hero social icons start */
 .hero-socials {
-  margin: 3rem 0 1.5rem;
+  margin: 2.5rem 0;
 }
 
 .hero-social-icons {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
   gap: 1.2rem;
