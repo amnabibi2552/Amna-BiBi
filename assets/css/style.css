@@ -356,14 +356,13 @@ header .hamburger.active .line-2 {
 .home {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
   min-height: 100vh;
-  justify-content: center;
   align-items: center;
   padding: 8rem 6rem 4rem;
   background: #ffffff;
   overflow: hidden;
-  text-align: center;
 }
 
 .home #particles-js {
@@ -446,7 +445,7 @@ header .hamburger.active .line-2 {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   padding: 1.6rem 3.5rem;
   border-radius: 50rem;
   background: #1a1a3e;
@@ -529,12 +528,11 @@ header .hamburger.active .line-2 {
 
 /* hero social icons start */
 .hero-socials {
-  margin: 2.5rem 0;
+  margin: 3rem 0 1.5rem;
 }
 
 .hero-social-icons {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   list-style: none;
   padding: 0;
   gap: 1.2rem;
