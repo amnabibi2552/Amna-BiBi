@@ -651,7 +651,7 @@ header .hamburger.active .line-2 {
 
 .about {
   background: #dde5f5;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 5rem 2rem 5rem 2rem;
 }
 
 .about .row {
@@ -970,7 +970,7 @@ header .hamburger.active .line-2 {
 /* education section starts */
 .education {
   background: #ffffff;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 5rem 2rem 5rem 2rem;
 }
 
 .education .education-grid {
