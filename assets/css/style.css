@@ -660,6 +660,7 @@ header .hamburger.active .line-2 {
 .about {
   background: #dde5f5;
   padding: 5rem 2rem 5rem 2rem;
+  position: relative;
 }
 
 .about .row {
@@ -681,16 +682,28 @@ header .hamburger.active .line-2 {
 
 .about .image-shell {
   background: #ffffff;
-  border: 3px solid #ff8800;
-  padding: 1rem;
+  border: 4px solid #ff8800;
+  padding: 1.2rem;
   border-radius: 50%;
-  box-shadow: 0 15px 40px rgba(255, 136, 0, 0.15);
+  box-shadow: 0 20px 50px rgba(255, 136, 0, 0.2);
   transition: all 0.4s ease;
+  position: relative;
+}
+
+.about .image-shell::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 2px dashed rgba(255, 136, 0, 0.3);
+  border-radius: 50%;
 }
 
 .about .image-shell:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px rgba(255, 136, 0, 0.25);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(255, 136, 0, 0.3);
 }
 
 .about .image-core {
@@ -708,7 +721,7 @@ header .hamburger.active .line-2 {
 }
 
 .about .image-shell:hover img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .about .content {
@@ -717,11 +730,16 @@ header .hamburger.active .line-2 {
 
 .about .content h3 {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 800;
   color: #060b5a;
   letter-spacing: -0.03rem;
   margin-bottom: 0.5rem;
+}
+
+.about .content h3 span {
+  color: #ff8800;
+  position: relative;
 }
 
 .about .content .tag {
@@ -730,15 +748,16 @@ header .hamburger.active .line-2 {
   font-weight: 700;
   color: #ff8800;
   background: rgba(255, 136, 0, 0.1);
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.8rem;
   border-radius: 9999px;
   display: inline-block;
   margin-bottom: 2rem;
+  border: 1px solid rgba(255, 136, 0, 0.2);
 }
 
 .about .content p.description {
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1.9;
   color: #475569;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -750,10 +769,21 @@ header .hamburger.active .line-2 {
 
 .about .expertise-title {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #060b5a;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.about .expertise-title::before {
+  content: "";
+  width: 4px;
+  height: 2rem;
+  background: #ff8800;
+  border-radius: 2px;
 }
 
 .about .expertise-grid {
@@ -765,40 +795,43 @@ header .hamburger.active .line-2 {
 .about .expertise-card-shell {
   background: #ffffff;
   border: 2px solid #e2e8f0;
-  border-radius: 1.2rem;
+  border-radius: 1.5rem;
   transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .about .expertise-card-shell:hover {
   border-color: #ff8800;
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(255, 136, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(255, 136, 0, 0.12);
 }
 
 .about .expertise-card-core {
-  padding: 1.8rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
+  text-align: center;
 }
 
 .about .expertise-icon {
-  font-size: 2rem;
-  background: rgba(255, 136, 0, 0.1);
-  color: #ff8800;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 1rem;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, #ff8800, #ffaa33);
+  color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(255, 136, 0, 0.25);
   transition: all 0.3s ease;
 }
 
 .about .expertise-card-shell:hover .expertise-icon {
-  background: #ff8800;
-  color: #ffffff;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 25px rgba(255, 136, 0, 0.35);
 }
 
 .about .expertise-card-core h5 {
@@ -810,7 +843,7 @@ header .hamburger.active .line-2 {
 }
 
 .about .expertise-card-core p {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   color: #64748b;
   line-height: 1.5;
   margin: 0;
